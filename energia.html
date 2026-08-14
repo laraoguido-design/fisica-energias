@@ -13,25 +13,26 @@
   <!-- 1. MENU DE NAVEGAÇÃO -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
-      <a class="navbar-brand fw-bold text-warning" href="#">⚡ Matrizes Energéticas</a>
+      <a class="navbar-brand fw-bold text-warning" href="#"> Matrizes Energéticas</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="menu">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#conceito">Conceito</a></li>
+          <li class="nav-item"><a class="nav-link" href="#conceito">Conceitos</a></li>
           <li class="nav-item"><a class="nav-link" href="#renovaveis">Renováveis</a></li>
           <li class="nav-item"><a class="nav-link" href="#nao-renovaveis">Não Renováveis</a></li>
           <li class="nav-item"><a class="nav-link" href="#comparativo">Tabela</a></li>
-          <li class="nav-item"><a class="nav-link" href="#aluno">Sobre mim</a></li>
+          
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- 2. CABEÇALHO / BANNER PRINCIPAL -->
-  <header class="bg-primary text-white text-center py-5">
-    <div class="container">
+  <header class=" text-white text-center py-5">
+    <img src="img/header.jpg" alt="" style=" z-index: 1;">
+    <div class="container" style="z-index: 2; position: relative; bottom:200px;">
       <h1 class="display-5 fw-bold">Matrizes Energéticas</h1>
       <p class="fs-5">Trabalho de Física — 3º Ano do Ensino Médio</p>
     </div>
@@ -40,7 +41,7 @@
   <main class="container my-5">
 
     <!-- 3. O QUE É MATRIZ ENERGÉTICA -->
-    <section id="conceito" class="mb-5">
+    <section id="conceito" class="mb-5" id="conceito">
       <div class="card p-4 shadow-sm border-0">
         <h2 class="h3 text-primary mb-3">O que é Matriz Energética?</h2>
         <!--  COLE AQUI O SEU TEXTO DE CONCEITO -->
@@ -50,26 +51,24 @@
  de fontes chamdas de 
  matriz energética. Representando o conjunto de fontes utilizadas 
  em um país, ou no mundo, para suprir a demanda de energia.   
+     A matriz energética é o conjunto de todas as fontes de energia disponíveis em um país ou no mundo para suprir as necessidades de transporte, indústrias, aquecimento e geração de eletricidade. 
+
      </p>
      
       </div>
     </section>
 
 
-    <section id="graficos">
-      <img src="img/matriz-mundo.png" alt="" style="height: 280px; position: relative; left:190px;" >
-      <img src="img/matriz-brasil.png" alt="" style="height: 280px; position: relative; left:190px;" >
-      
-     </section>
+  
 
      <br>
     <!-- 3. O QUE É MATRIZ ENERGÉTICA -->
-    <section id="conceito" class="mb-5">
+    <section id="energias" class="mb-5">
         <div class="card p-4 shadow-sm border-0">
           <h3 class="h3 text-primary mb-3">Renoáveis e não renováveis</h3>
-          <!--  COLE AQUI O SEU TEXTO DE CONCEITO -->
+           A energia renovável vem de recursos que se regeneram sozinhos e não acabam.
+            A energia não renovável usa recursos finitos que levam milhões de anos para se formar.
           <p class="fs-6 text-dark mb-0">
-            A matriz energética é o conjunto de todas as fontes de energia disponíveis em um país ou no mundo para suprir as necessidades de transporte, indústrias, aquecimento e geração de eletricidade. 
           </p>
         </div>
       </section>
@@ -123,9 +122,28 @@
           </table>
         </div>
       </section>
+      <section id="comparativo">
+        <p>O mundo possui uma matriz energética composta, principalmente, por fontes não renováveis, como o carvão, petróleo e gás natural. 
+          A matriz energética do Brasil é muito diferente da mundial. Por aqui, usamos mais fontes renováveis que no resto do mundo. Somando lenha e carvão vegetal, hidráulica, derivados de cana, eólica, solar e outras renováveis, nossas renováveis totalizam 49,5%, ou seja, representam quase metade da nossa matriz energética. 
+      </p>
+      <br>
+      </section>
+        <section id="graficos">
+      <img src="img/matriz-mundo.png" alt="" style="height: 280px; position: relative; left:190px;" >
+      <img src="img/matriz-brasil.png" alt="" style="height: 280px; position: relative; left:190px;" >
+      <br>
+      <br>
+      <p>
+        Portanto, a energia no Brasil se sobressai pela quantidade de fontes renovávei sem relação aos outros países,
+       isso porque as não renováveis as maiores responsáveis pela emissão de gases de efeito estufa. 
+        O país emite menos GEE por habitante que a maioria dos outros países. 
+      </p>
+      <img src="img/brasil-mundo.png" alt="" style="height: 280px; position: relative; left:390px;">
+     </section>
+     <br>
 
     <!-- 4. FONTES RENOVÁVEIS -->
-    <section id="renovaveis" class="mb-5">
+    <section id="renovaveis" class="mb-5" style="margin-top: 50px;">
       <div class="d-flex align-items-center mb-3">
         <span class="badge bg-success me-2 fs-6">Sustentável</span>
         <h2 class="h3 text-success mb-0">Energias Renováveis</h2>
@@ -136,8 +154,8 @@
         <!-- CARD RENOVÁVEL 1 -->
         <div class="col-md-4">
           <div class="card h-100 shadow-sm">
-            <!--  TROQUE O LINK DA IMAGEM SE QUISER -->
-            <img src="" class="card-img-top" alt="Energia Solar" style="height: 180px; object-fit: cover;">
+            
+            <img src="img/solar.jpg" class="card-img-top" alt="Energia Solar" style="height: 180px; object-fit: cover;">
             <div class="card-body">
               <h5 class="card-title text-success">Solar</h5>
               <p class="card-text small text-secondary"><strong>Características:</strong> Capta a luz do Sol por painéis fotovoltaicos para gerar energia elétrica.</p>
@@ -149,7 +167,7 @@
         <!-- CARD RENOVÁVEL 2 -->
         <div class="col-md-4">
           <div class="card h-100 shadow-sm">
-            <img src="" class="card-img-top" alt="Energia Eólica" style="height: 180px; object-fit: cover;">
+            <img src="img/eolica.jpg" class="card-img-top" alt="Energia Eólica" style="height: 180px; object-fit: cover;">
             <div class="card-body">
               <h5 class="card-title text-success">Eólica</h5>
               <p class="card-text small text-secondary"><strong>Características:</strong> Usa a força do vento para girar turbinas (aerogeradores).</p>
@@ -161,7 +179,7 @@
         <!-- CARD RENOVÁVEL 3 -->
         <div class="col-md-4">
           <div class="card h-100 shadow-sm">
-            <img src="" class="card-img-top" alt="Energia Hidrelétrica" style="height: 180px; object-fit: cover;">
+            <img src="img/hidro.jpg" class="card-img-top" alt="Energia Hidrelétrica" style="height: 180px; object-fit: cover;">
             <div class="card-body">
               <h5 class="card-title text-success">Hidrelétrica</h5>
               <p class="card-text small text-secondary"><strong>Características:</strong> Usa a força e a queda da água dos rios para girar turbinas elétricas.</p>
@@ -184,7 +202,7 @@
         <!-- CARD NÃO RENOVÁVEL 1 -->
         <div class="col-md-4">
           <div class="card h-100 shadow-sm">
-            <img src="" class="card-img-top" alt="Petróleo" style="height: 180px; object-fit: cover;">
+            <img src="img/petroleo.jpg" class="card-img-top" alt="Petróleo" style="height: 180px; object-fit: cover;">
             <div class="card-body">
               <h5 class="card-title text-danger">Petróleo</h5>
               <p class="card-text small text-secondary"><strong>Características:</strong> Combustível fóssil líquido extraído do subsolo.</p>
@@ -196,7 +214,7 @@
         <!-- CARD NÃO RENOVÁVEL 2 -->
         <div class="col-md-4">
           <div class="card h-100 shadow-sm">
-            <img src="" class="card-img-top" alt="Carvão Mineral" style="height: 180px; object-fit: cover;">
+            <img src="img/carvao.jpg" class="card-img-top" alt="Carvão Mineral" style="height: 180px; object-fit: cover;">
             <div class="card-body">
               <h5 class="card-title text-danger">Carvão Mineral</h5>
               <p class="card-text small text-secondary"><strong>Características:</strong> Rocha fóssil queimada em termelétricas. Altamente poluente.</p>
@@ -208,7 +226,7 @@
         <!-- CARD NÃO RENOVÁVEL 3 -->
         <div class="col-md-4">
           <div class="card h-100 shadow-sm">
-            <img src="" class="card-img-top" alt="Energia Nuclear" style="height: 180px; object-fit: cover;">
+            <img src="img/nuclear.jpg" class="card-img-top" alt="Energia Nuclear" style="height: 180px; object-fit: cover;">
             <div class="card-body">
               <h5 class="card-title text-danger">Nuclear / Urânio</h5>
               <p class="card-text small text-secondary"><strong>Características:</strong> Obtida pela fissão nuclear de átomos de Urânio em reatores.</p>
@@ -227,7 +245,7 @@
 
   <!-- RODAPÉ -->
   <footer class="bg-black text-white-50 text-center py-3">
-    <small>Site Educativo desenvolvido para aula de Física | 3º EM</small>
+    <small>Lara Wada Oguido | 3º EM</small>
   </footer>
 
   <!-- BOOTSTRAP JAVASCRIPT (Necessário para o menu funcionar no celular) -->
